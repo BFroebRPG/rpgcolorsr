@@ -307,7 +307,7 @@ scale_fill_rpg <- function(palette = "logo", discrete = TRUE, reverse = FALSE, .
 #'
 #'@return a color matrix
 #' @export
-mapdeck_palette <- function(palette = "logo", reverse = FALSE, alpha = 256){
+mapdeck_palette <- function(palette = "logo", reverse = FALSE, alpha = 255){
   steps <- length(rpg_color_palettes[[palette]])
   colors <- rpg_color_pal(palette = palette, reverse = reverse)(steps)
   matrix <- colorRamp(colors)( (1:256)/256 )
